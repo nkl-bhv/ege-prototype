@@ -1,5 +1,13 @@
-cd apps/web
-npm install
-git add package-lock.json
-git commit -m "chore: add npm lockfile for apps/web"
-git push
+{
+  "name": "web",
+  "version": "0.1.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "web",
+      "version": "0.1.0",
+      "dependencies": {}
+    }
+  }
+}
