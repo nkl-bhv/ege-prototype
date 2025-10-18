@@ -12,7 +12,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ru" className={nunito.variable}>
-
         <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(92,107,246,0.08)_0%,_transparent_55%)]">
           {children}
         </div>
