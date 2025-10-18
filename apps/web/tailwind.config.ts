@@ -38,8 +38,8 @@ const config: Config = {
         }
       },
       fontFamily: {
-        display: ['\"Nunito\"', ...defaultTheme.fontFamily.sans],
-        sans: ['\"Nunito\"', ...defaultTheme.fontFamily.sans]
+        display: ['Nunito', ...defaultTheme.fontFamily.sans],
+        sans: ['Nunito', ...defaultTheme.fontFamily.sans]
       },
       boxShadow: {
         card: '0 12px 30px rgba(92, 107, 246, 0.12)',
