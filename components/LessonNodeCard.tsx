@@ -1,7 +1,9 @@
+'use client'
+
 import { motion } from 'framer-motion'
 import clsx from 'clsx'
 import { CheckIcon, ChevronRightIcon, LockIcon, PlayIcon } from './icons'
-import type { LessonNode } from '../lib/types'
+import type { LessonNode } from '@/lib/types'
 
 interface LessonNodeCardProps {
   lesson: LessonNode
