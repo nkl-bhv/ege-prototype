@@ -3,11 +3,7 @@ import { type SVGProps } from 'react'
 export function FlameIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" {...props}>
-      <path
-        d="M12 2s2.5 3 2.5 5.5S12 11 12 11s-2-1.5-2-3.5S12 2 12 2Z"
-        fill="currentColor"
-        opacity="0.4"
-      />
+      <path d="M12 2s2.5 3 2.5 5.5S12 11 12 11s-2-1.5-2-3.5S12 2 12 2Z" fill="currentColor" opacity="0.4" />
       <path
         d="M12 22c3.314 0 6-2.686 6-6 0-2.014-1.035-3.799-2.624-4.854a.75.75 0 0 0-.878.077c-.91.802-2.124 1.277-3.498 1.277-1.374 0-2.588-.475-3.498-1.277a.75.75 0 0 0-.878-.077C7.035 12.201 6 13.986 6 16c0 3.314 2.686 6 6 6Z"
         strokeLinecap="round"

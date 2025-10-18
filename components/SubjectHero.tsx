@@ -1,4 +1,4 @@
-import type { SubjectOverview } from '../lib/types'
+import type { SubjectOverview } from '@/lib/types'
 
 interface SubjectHeroProps {
   subject: SubjectOverview

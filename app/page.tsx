@@ -1,9 +1,9 @@
-import { BottomNav } from '../components/BottomNav'
-import { DailyGoalCard } from '../components/DailyGoalCard'
-import { LessonRoadmap } from '../components/LessonRoadmap'
-import { SubjectHero } from '../components/SubjectHero'
-import { TopStatusBar } from '../components/TopStatusBar'
-import { mockStats, mockSubject } from '../lib/mock-data'
+import { BottomNav } from '@/components/BottomNav'
+import { DailyGoalCard } from '@/components/DailyGoalCard'
+import { LessonRoadmap } from '@/components/LessonRoadmap'
+import { SubjectHero } from '@/components/SubjectHero'
+import { TopStatusBar } from '@/components/TopStatusBar'
+import { mockStats, mockSubject } from '@/lib/mock-data'
 
 export default function HomePage() {
   return (
