@@ -2,9 +2,6 @@
   "name": "ege-prototype",
   "private": true,
   "version": "0.1.0",
-  "scripts": {
-    "dev": "npm run dev --workspace web",
-    "build": "npm run build --workspace web",
-    "start": "npm run start --workspace web"
+
   }
 }
