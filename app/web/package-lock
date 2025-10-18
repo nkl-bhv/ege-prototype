@@ -1,0 +1,5 @@
+cd apps/web
+npm install
+git add package-lock.json
+git commit -m "chore: add npm lockfile for apps/web"
+git push

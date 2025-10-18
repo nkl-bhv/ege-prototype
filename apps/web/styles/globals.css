@@ -6,17 +6,5 @@
   color-scheme: light;
 }
 
-@layer base {
-  body {
-    background-color: theme('colors.background.DEFAULT');
-    color: theme('colors.neutral.900');
-    @apply antialiased;
-    font-feature-settings: 'ss01' on, 'liga' off;
-  }
 
-  button:focus-visible,
-  a:focus-visible {
-    outline: 3px solid theme('colors.secondary.DEFAULT');
-    outline-offset: 4px;
-  }
 }
