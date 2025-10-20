@@ -25,6 +25,10 @@ npm start
 
 ### Архитектура проекта
 
+## Сборка
+```bash
+npm run build
+npm start
 ```
 app/                 # App Router: layout, главная страница и PWA-хук
 components/          # Переиспользуемые UI-блоки (TopStatusBar, Roadmap и т.п.)
