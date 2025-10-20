@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import type { MainMenuStats } from '../lib/types'
+import type { MainMenuStats } from '@/lib/types'
 
 interface DailyGoalCardProps {
   stats: MainMenuStats

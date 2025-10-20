@@ -1,4 +1,4 @@
-import { SubjectOverview, MainMenuStats } from './types'
+import type { SubjectOverview, MainMenuStats } from './types'
 
 export const mockStats: MainMenuStats = {
   level: 1,
@@ -13,7 +13,7 @@ export const mockStats: MainMenuStats = {
 export const mockSubject: SubjectOverview = {
   id: 'econ',
   title: 'Экономика',
-  welcomeText: 'Добро пожаловать на курс! Продолжай и ты быстро выйдешь на новый уровень.',
+  welcomeText: 'Добро пожаловать на курс! Продолжай — и ты быстро выйдешь на новый уровень.',
   activeTab: 'practice',
   achievements: [
     { id: 'first-step', title: 'Первый шаг', description: 'Пройди первый урок' },
