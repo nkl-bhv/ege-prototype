@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from 'next'
-import type { Metadata } from 'next'
 import '@/styles/globals.css'
 import { ServiceWorker } from '@/components/ServiceWorker'
 
