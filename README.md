@@ -21,3 +21,4 @@ npm start
 — Root Directory: / (корень репозитория)
 — Framework Preset: Next.js
 — Никаких экспериментальных опций в next.config.mjs
+— Команды установки и билда указаны в `vercel.json`, поэтому Vercel будет собирать проект из корня (`npm install` → `npm run build`).

@@ -1,3 +1,4 @@
+import type { Metadata, Viewport } from 'next'
 import type { Metadata } from 'next'
 import '@/styles/globals.css'
 import { ServiceWorker } from '@/components/ServiceWorker'
@@ -5,6 +6,13 @@ import { ServiceWorker } from '@/components/ServiceWorker'
 export const metadata: Metadata = {
   title: 'ЕГЭ-Прокачка',
   description: 'Готовься к ЕГЭ с ежедневными мини-уроками и прогрессом',
+  manifest: '/manifest.webmanifest'
+}
+
+export const viewport: Viewport = {
+  themeColor: '#5C6BF6'
+}
+
   themeColor: '#5C6BF6',
   manifest: '/manifest.webmanifest'
 }
