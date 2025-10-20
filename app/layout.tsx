@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import type { Metadata } from 'next'
 import '@/styles/globals.css'
 import { ServiceWorker } from '@/components/ServiceWorker'
 
@@ -12,11 +13,16 @@ export const viewport: Viewport = {
   themeColor: '#5C6BF6'
 }
 
+  themeColor: '#5C6BF6',
+  manifest: '/manifest.webmanifest'
+}
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ru">
       <head>
         <link rel="manifest" href="/manifest.webmanifest" />
+        <meta name="theme-color" content="#5C6BF6" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       </head>
       <body>
