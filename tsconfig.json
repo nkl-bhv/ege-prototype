@@ -1,29 +1,25 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "lib": ["dom", "dom.iterable", "es2022"],
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["dom", "es2020"],
     "allowJs": false,
     "skipLibCheck": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
     "noEmit": true,
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
+    "jsx": "react-jsx",
     "types": ["node"],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
-    },
-    "plugins": [{ "name": "next" }]
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+      "@/*": ["src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["App.tsx", "src", "nativewind.d.ts"],
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js"]
 }

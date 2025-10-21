@@ -1,0 +1,35 @@
+{
+  "id": "econ-final",
+  "title": "Итоговый тест",
+  "rewardXP": 25,
+  "isFinal": true,
+  "slides": [
+    {
+      "id": "econ-final-slide-1",
+      "type": "quiz",
+      "content": "Что НЕ относится к факторам производства?",
+      "options": [
+        "Труд",
+        "Земля",
+        "Налоги"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "econ-final-slide-2",
+      "type": "quiz",
+      "content": "Кто выступает поставщиком факторов производства?",
+      "options": [
+        "Домохозяйства",
+        "Фирмы",
+        "Государство"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "econ-final-slide-3",
+      "type": "text",
+      "content": "Отличная работа! Ты готов двигаться дальше."
+    }
+  ]
+}
