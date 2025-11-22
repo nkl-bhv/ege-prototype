@@ -16,16 +16,6 @@ export interface CourseOverview {
   lessons: LessonItem[];
 }
 
-export interface CourseProgress {
-  subjectName: string;
-  userName: string;
-  totalLessons: number;
-  completedLessons: number;
-  dailyGoalLessons: number;
-  todayCompletedLessons: number;
-  nextLessonTitle: string;
-}
-
 export const courseOverview: CourseOverview = {
   subjectName: 'Экономика',
   welcomeSubtitle: 'Добро пожаловать в курс экономики!',
@@ -39,15 +29,5 @@ export const courseOverview: CourseOverview = {
     { title: 'Факторы производства', status: 'locked', note: 'Заблокировано' },
     { title: 'Экономические системы', status: 'locked', note: 'Заблокировано' },
     { title: 'Спрос и предложение', status: 'locked', note: 'Заблокировано' },
-  ],
-};
-
-export const mockProgress: CourseProgress = {
-  subjectName: 'Обществознание',
-  userName: 'Николай',
-  totalLessons: 20,
-  completedLessons: 5,
-  dailyGoalLessons: 1,
-  todayCompletedLessons: 0,
-  nextLessonTitle: 'Что такое экономика',
+  ]
 };
