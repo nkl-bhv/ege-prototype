@@ -29,5 +29,5 @@ export const courseOverview: CourseOverview = {
     { title: 'Факторы производства', status: 'locked', note: 'Заблокировано' },
     { title: 'Экономические системы', status: 'locked', note: 'Заблокировано' },
     { title: 'Спрос и предложение', status: 'locked', note: 'Заблокировано' },
-  ],
+  ]
 };
