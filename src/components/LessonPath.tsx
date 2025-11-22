@@ -3,6 +3,7 @@ import { CourseOverview, LessonItem } from '../data/mockData';
 
 interface LessonPathProps {
   lessons: CourseOverview['lessons'];
+  onStartCurrent?: () => void;
 }
 
 const getCircleStyles = (status: LessonItem['status']) => {
@@ -25,17 +26,27 @@ const getCircleStyles = (status: LessonItem['status']) => {
   }
 };
 
-const LessonPath = ({ lessons }: LessonPathProps) => {
+const LessonPath = ({ lessons, onStartCurrent }: LessonPathProps) => {
   return (
     <div className="relative mt-5">
       <div className="absolute left-[26px] top-6 bottom-6 w-[6px] rounded-full bg-[#6CC070]" aria-hidden />
       <div className="flex flex-col gap-4">
-        {lessons.map((lesson, index) => {
+        {lessons.map((lesson) => {
           const { bg, icon } = getCircleStyles(lesson.status);
+          const isCurrent = lesson.status === 'current';
           return (
-            <div
+            <button
               key={lesson.title}
-              className="relative flex gap-3 rounded-2xl bg-white p-4 shadow-[0_8px_24px_rgba(0,0,0,0.08)]"
+              type="button"
+              onClick={isCurrent ? onStartCurrent : undefined}
+              className={clsx(
+                'relative flex gap-3 rounded-2xl bg-white p-4 text-left shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-transform',
+                {
+                  'cursor-pointer hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FF7A00]':
+                    isCurrent,
+                  'cursor-default': !isCurrent,
+                },
+              )}
             >
               <div className="flex flex-col items-center">
                 <div
@@ -62,7 +73,7 @@ const LessonPath = ({ lessons }: LessonPathProps) => {
                   {lesson.note}
                 </p>
               </div>
-            </div>
+            </button>
           );
         })}
       </div>
