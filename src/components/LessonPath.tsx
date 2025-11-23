@@ -1,7 +1,5 @@
+import clsx from 'clsx';
 import { CourseOverview, LessonItem } from '../data/mockData';
-
-const classNames = (...values: (string | false | undefined)[]) =>
-  values.filter(Boolean).join(' ');
 
 interface LessonPathProps {
   lessons: CourseOverview['lessons'];
@@ -41,7 +39,7 @@ const LessonPath = ({ lessons, onStartCurrent }: LessonPathProps) => {
               key={lesson.title}
               type="button"
               onClick={isCurrent ? onStartCurrent : undefined}
-              className={classNames(
+              className={clsx(
                 'relative flex gap-3 rounded-2xl bg-white p-4 text-left shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-transform',
                 isCurrent
                   ? 'cursor-pointer hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FF7A00]'
@@ -50,7 +48,7 @@ const LessonPath = ({ lessons, onStartCurrent }: LessonPathProps) => {
             >
               <div className="flex flex-col items-center">
                 <div
-                  className={classNames(
+                  className={clsx(
                     'z-10 flex h-12 w-12 items-center justify-center rounded-full text-xl text-white shadow-[0_4px_12px_rgba(0,0,0,0.12)]',
                     bg,
                   )}
@@ -64,7 +62,7 @@ const LessonPath = ({ lessons, onStartCurrent }: LessonPathProps) => {
               <div>
                 <p className="text-base font-semibold text-slate-900">{lesson.title}</p>
                 <p
-                  className={classNames(
+                  className={clsx(
                     'text-sm',
                     lesson.status === 'current' && 'text-[#FF7A00]',
                     lesson.status === 'completed' && 'text-[#6CC070]',
