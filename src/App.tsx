@@ -23,7 +23,10 @@ const App = () => {
       )}
 
       {currentScreen === 'lessonContent' && (
-        <LessonContentScreen onBack={() => setCurrentScreen('lessonIntro')} />
+        <LessonContentScreen
+          onBack={() => setCurrentScreen('lessonIntro')}
+          onFinishLesson={() => setCurrentScreen('home')}
+        />
       )}
     </Layout>
   );
